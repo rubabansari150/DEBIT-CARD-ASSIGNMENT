@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:  kredit font; */
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+@font-face {
+    font-family: kredit font;
+    src: url("image/Kredit\ Front.otf");
+}
+
+@import url('https://fonts.googleapis.com');
+
+
+
+.container {
+    min-height: 100vh;
+    background-color: rgb(236, 223, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.container form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container form .inputbox {
+    margin-top: 20px;
+}
+
+.container form .inputbox span {
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.container form .inputbox input,
+.container form .inputbox select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: #444;
+}
+
+.container form .flexbox {
+    display: flex;
+    gap: 15px;
+}
+
+.container form .flexbox .inputbox {
+    flex: 1 1 150px;
+}
+
+.container form .submit-btn {
+    width: 100%;
+    background: linear-gradient(50deg, rgb(3, 108, 245), rgb(3, 42, 94), rgb(3, 108, 245));
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+    border-radius: 10px;
+}
+
+.container form .submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.container .card-container {
+    margin-bottom: -150px;
+    position: relative;
+    height: 225px;
+    width: 400px;
+}
+
+.container .card-container .front {
+    font-family:  kredit font;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(50deg, rgb(3, 108, 245), rgb(3, 42, 94), rgb(3, 108, 245));
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    backface-visibility: hidden;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
+}
+.container .card-container .front .bank_name{
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+} 
+
+.container .card-container .front .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.container .card-container .front .image img {
+    height: 45px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.container .card-container .front .card-num-box {
+    padding: 20px 0px;
+    font-size: 30px;
+    color: #fff;
+    text-align: left;
+}
+
+.container .card-container .front .flexbox {
+    display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1) {
+    margin-right: auto;
+}
+
+.container .card-container .front .flexbox .box {
+    font-size: 16px;
+    color: #fff;
+}
+.container .card-container .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(50deg, rgb(3, 108, 245), rgb(3, 42, 94), rgb(3, 108, 245));
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    backface-visibility: hidden;
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+}
+.container .card-container .back .back_contect{
+    width: 100%;
+    text-align: left;
+    padding: 10px 0px 5px 30px;
+    font-size: 8px;
+    color: #fff;
+    word-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    height: 50px;
+}
+.container .card-container .back .box{
+  padding: 0 20px;
+}
+.container .card-container .back .box span{
+    color: #fff;
+    font-size: 15px;
+}
+.container .card-container .back .box .cvv-box{
+    height: 40px;
+    padding:10px;
+    margin-top: 10px;
+    color: #333;
+    background: #fff;
+    font-family: kredit font;
+    width: 100%;
+}
+.container .card-container .back .back_para{
+    width: 100%;
+    text-align: left;
+    padding: 15px 0px 0px 10px;
+    font-size: 7px;
+    color: #fff;
+    word-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+}
